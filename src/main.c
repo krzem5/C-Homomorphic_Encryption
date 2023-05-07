@@ -21,6 +21,6 @@ int main(void){
 	bfv_add(&tmp,&vec2,&out);
 	unsigned short out_raw[8];
 	bfv_decode(&config,&out,out_raw);
-	printf("%u, %u, %u, %u, %u, %u, %u, %u | 3, 27, 67, 8, 30, 5, 23, 33\n",out_raw[0],out_raw[1],out_raw[2],out_raw[3],out_raw[4],out_raw[5],out_raw[6],out_raw[7]);
+	printf("vec1^2+vec2 = {%u, %u, %u, %u, %u, %u, %u, %u} | {3, 27, 67, 8, 30, 5, 23, 33}\n",out_raw[0],out_raw[1],out_raw[2],out_raw[3],out_raw[4],out_raw[5],out_raw[6],out_raw[7]);
 	return 0;
 }
